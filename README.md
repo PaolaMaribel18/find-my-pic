@@ -1,51 +1,54 @@
-# FindMyPic: Sistema de Recuperación de Información Basado en Imágenes
+# 🔍 FindMyPic: Image-Based Information Retrieval System
 
-## Introducción
+## 📌 Introduction
 
-El objetivo de este proyecto es diseñar y desarrollar FindMyPic, un sistema de recuperación de imágenes que permite a los usuarios realizar consultas utilizando imágenes en lugar de texto. Este sistema está diseñado para encontrar imágenes similares dentro de una base de datos dada. El proyecto se divide en varias fases, que se describen a continuación.
+The goal of this project is to design and develop **FindMyPic**, an image retrieval system that allows users to make queries using images instead of text. This system is built to find similar images within a given database. The project is divided into several phases, described below.
 
-## Fases del Proyecto
+---
 
-### 1. Adquisición de Datos
-- **Objetivo:** Obtener y preparar el dataset Caltech101.
-- **Tareas:** Descargar, descomprimir y organizar el dataset.
+## 🧩 Project Phases
 
-### 2. Preprocesamiento
-- **Objetivo:** Preparar las imágenes para su análisis.
-- **Tareas:** Normalizar, reducir tamaño y eliminar ruido de las imágenes; documentar el proceso.
+### 1. 📥 Data Acquisition  
+- **Goal:** Obtain and prepare the Caltech101 dataset.  
+- **Tasks:** Download, unzip, and organize the dataset.
 
-### 3. Extracción de Características
-- **Objetivo:** Extraer características procesables de las imágenes.
-- **Tareas:** Utilizar una CNN para extraer características, entrenar o aplicar transfer learning, documentar métodos y resultados.
+### 2. 🧼 Preprocessing  
+- **Goal:** Prepare the images for analysis.  
+- **Tasks:** Normalize, resize, and denoise the images; document the process.
 
-### 4. Indexación
-- **Objetivo:** Crear un índice para búsquedas eficientes.
-- **Tareas:** Desarrollar un sistema de indexación usando técnicas como k-NN, KD-Trees o LSH; documentar el proceso.
+### 3. 🧠 Feature Extraction  
+- **Goal:** Extract meaningful features from the images.  
+- **Tasks:** Use a CNN to extract features, apply transfer learning or train a model, and document methods and results.
 
-### 5. Diseño del Motor de Búsqueda
-- **Objetivo:** Implementar la funcionalidad de búsqueda.
-- **Tareas:** Desarrollar la lógica de consulta, el algoritmo de ranking y documentar la arquitectura y los algoritmos.
+### 4. 🗂️ Indexing  
+- **Goal:** Build an index for efficient searches.  
+- **Tasks:** Develop an indexing system using techniques like k-NN, KD-Trees, or LSH; document the process.
 
-### 6. Evaluación del Sistema
-- **Objetivo:** Medir la efectividad del sistema.
-- **Tareas:** Definir métricas de evaluación, establecer benchmarks, comparar configuraciones y documentar resultados.
+### 5. 🔎 Search Engine Design  
+- **Goal:** Implement the search functionality.  
+- **Tasks:** Develop query logic, ranking algorithm, and document the system architecture and algorithms.
 
-### 7. Interfaz Web de Usuario
-- **Objetivo:** Crear una interfaz para la interacción con el sistema.
-- **Tareas:** Diseñar una interfaz web para subir imágenes y mostrar resultados, asegurar una experiencia intuitiva y documentar el diseño.
+### 6. 📊 System Evaluation  
+- **Goal:** Measure the system’s effectiveness.  
+- **Tasks:** Define evaluation metrics, set benchmarks, compare configurations, and document results.
 
-## Entorno Virtual
+### 7. 🌐 Web User Interface  
+- **Goal:** Create a user-friendly interface.  
+- **Tasks:** Design a web interface to upload images and display results, ensure intuitive UX, and document the design.
 
-Para garantizar la consistencia del entorno de desarrollo, se ha configurado un entorno virtual. Asegúrate de activarlo antes de trabajar en el proyecto.
+---
+
+## 🧪 Virtual Environment
+
+To ensure consistency in the development environment, a virtual environment has been set up. Activate it before working on the project:
 
 ```bash
-# Activar el entorno virtual
+# Activate the virtual environment
 source .venv/bin/activate
 ```
-## Instalación de Dependencias
-
-Las dependencias necesarias para el proyecto están listadas en el archivo `requirements.txt`. Puedes instalarlas ejecutando el siguiente comando:
-
+## 📦 Installing Dependencies
+All necessary dependencies are listed in the requirements.txt file. Install them with the following command:
 ```bash
 pip install -r requirements.txt
 ```
+
